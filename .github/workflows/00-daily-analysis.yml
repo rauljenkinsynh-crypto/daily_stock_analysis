@@ -569,8 +569,8 @@ jobs:
             reports/
             logs/
               retention-days: 30
-        - name: 提交报告到仓库
-        if: always()
+    - name: 提交报告到仓库
+      if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
